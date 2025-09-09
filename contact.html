@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – See the Forest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: white;
+      background-color: #0b2d1f;
+      padding: 3rem;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+    }
+    form {
+      max-width: 600px;
+      margin: 2rem 0;
+    }
+    label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 50px;
+      background: white;
+      color: #0b2d1f;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .social {
+      margin-top: 2rem;
+    }
+    .social a {
+      margin-right: 1rem;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <p>See the Forest is proudly based in El Cerrito, California.</p>
+  
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <label for="name">Name</label>
+    <input type="text" name="name" required />
+    <label for="email">Email</label>
+    <input type="email" name="email" required />
+    <label for="message">Message</label>
+    <textarea name="message" rows="6" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <div class="social">
+    <a href="#">Instagram</a>
+    <a href="#">Twitter</a>
+    <a href="#">Facebook</a>
+  </div>
+</body>
+</html>
